@@ -1,7 +1,7 @@
 # Edit your ceredential details 
 
 ```
-vim .env
+mv .example_env .env && vim .env
 ```
 
 If you dont have twitter Tokens try this [Tutorials](https://gist.github.com/jimkang/34d16247b40097d8cace/) below:

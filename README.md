@@ -1,3 +1,15 @@
+# Edit your ceredential details 
+
+```
+vim .env
+```
+
+If you dont have twitter Tokens try this [Tutorials](https://gist.github.com/jimkang/34d16247b40097d8cace/) below:
+
+
+
+# Get Twitter Tokens
+
 1. Sign up for a new Twitter account. They'll ask for a phone number, and unfortunately, as of 5/12/2015, I think you have to provide one to get API keys.
 ![Add phone number](https://cloud.githubusercontent.com/assets/324298/7590996/3f5ee072-f899-11e4-9509-86e34f06f642.png)
 
@@ -19,3 +31,14 @@
 
 
 [@_hartsick](https://twitter.com/_hartsick) pointed out that you can also just create one app and have [multiple bots share it](http://dghubble.com/blog/posts/twitter-app-write-access-and-bots/)!
+
+
+## Build docker images
+```
+docker build --tag agusart/mutualfess .
+```
+
+## Run a container
+```
+docker run --name agusart -v /home/agus/MutualanTwitter:/code -d agusart/mutualfess:latest
+```
